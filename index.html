@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-image: linear-gradient(rgba(245, 219, 19, 1), rgba(242, 184, 7, 1));
+            padding-bottom: 120px;
+        }
+
+        .heading {
+            box-shadow: 0 4px 16px 0 rgba(1, 28, 64, 0.2);
+            background-color: #F5DB13;
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 158px 16px 158px;
+            align-items: center;
+        }
+
+        .head1 {
+            height: 63px;
+            width: 157.17px;
+        }
+
+        .head2 {
+            display: flex;
+            gap: 20px;
+            height: 45px;
+            font-weight: 500;
+            font-size: large;
+        }
+
+        .ruler {
+            width: 50px;
+            height: 2.5px;
+            color: rgba(33, 33, 33, 1);
+            box-sizing: border-box;
+            background-color: rgba(33, 33, 33, 1);
+            margin-top: 10px;
+        }
+
+        .container-2 {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding: 20px;
+
+        }
+
+        .cover-text {
+            display: flex;
+            flex-direction: column;
+            flex: 40%;
+            gap: 20px;
+        }
+
+
+        .title {
+            font-size: 60px;
+            font-size: 72;
+            line-height: 84px;
+            letter-spacing: 4px;
+        }
+
+        .description {
+            font-size: 28px;
+            line-height: 38px;
+        }
+
+        .button {
+            box-sizing: border-box;
+            height: 66px;
+            width: 231px;
+            background-color: rgba(115, 214, 119, 1);
+            box-shadow: 0px 6px 8px 0 rgb(40, 135, 103);
+            border-radius: 15px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .cover-image {
+            flex: 60%;
+            position: relative;
+        }
+
+        .pika {
+            position: absolute;
+            height: 400px;
+        }
+
+        .clouds {
+            position: absolute;
+            height: 400px;
+        }
+
+        .blackball {
+            position: absolute;
+
+        }
+
+        .original-ball {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            right: 0;
+            bottom: 0;
+        }
+
+        .original-ball:hover {
+            animation: bounce 2s ease;
+        }
+
+        @keyframes bounce {
+            70% {
+                transform: translateY(0%);
+            }
+
+            80% {
+                transform: translateY(-15%);
+            }
+
+            90% {
+                transform: translateY(0%);
+            }
+
+            95% {
+                transform: translateY(-7%);
+            }
+
+            97% {
+                transform: translateY(0%);
+            }
+
+            99% {
+                transform: translateY(-3%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .core {
+            position: absolute;
+            width: 250px;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .red {
+            position: absolute;
+            width: 268px;
+            top: -8px;
+            left: -9px;
+
+        }
+
+        .white {
+            width: 268px;
+            position: absolute;
+            bottom: -4px;
+            left: -9px;
+
+        }
+
+        .knob {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <div class="head1">
+                <img src="../pokethumbnail/img/Logo.png" alt="poke">
+            </div>
+            <div class="head2">
+                <div>
+                    <p>Home</p>
+                    <div class="ruler"></div>
+                </div>
+                <p>Pokédex</p>
+                <p>Legendaries</p>
+                <p>Documentation</p>
+            </div>
+        </div>
+        <div class="container-2">
+            <div class="cover-text">
+                <p class="title"><b>Find</b> all your favourite <b>Pokemon</b></p>
+                <p class="description">You can know the type of Pokemon, its strengths, disadvantages and abilities</p>
+                <div class="button">
+                    <h3>See pokemons</h3>
+                </div>
+            </div>
+            <div class="cover-image">
+                <div class="picture">
+                    <img class="clouds" src="../pokethumbnail/img/Clouds.png" alt="clouds">
+                    <img class="blackball" src="../pokethumbnail/img/PokeBall1.png" alt="bosng dden">
+                    <img class="pika" src="../pokethumbnail/img/Pikachu.png" alt="pika">
+                    <div class="original-ball">
+                        <img class="core" src="../pokethumbnail/img/core.png" alt="loi">
+                        <img class="red" src="../pokethumbnail/img/cover top.png" alt="do">
+                        <img class="white" src="../pokethumbnail/img/cover bottom.png" alt="trang">
+                        <img class="knob" src="../pokethumbnail/img/circle.png" alt="hinhtron">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
